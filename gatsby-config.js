@@ -35,5 +35,13 @@ module.exports = {
     // To learn more, visit: https://gatsby.dev/offline
     `gatsby-plugin-offline`,
     "gatsby-plugin-postcss",
+    {
+      resolve: "gatsby-plugin-mailchimp",
+      options: {
+        endpoint:
+          "https://simontutors.us17.list-manage.com/subscribe/post?u=7cbc691cff7a3c07af7f4c45d&amp;id=bc507d2537", // string; add your MC list endpoint here; see instructions below
+        timeout: 3500, // number; the amount of time, in milliseconds, that you want to allow mailchimp to respond to your request before timing out. defaults to 3500
+      },
+    },
   ],
 }

@@ -1,3 +1,11 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.mailchimpform {
+  @apply flex flex-col;
+}
+
+.mailchimpform input {
+  @apply my-2 py-3;
+}

@@ -10,6 +10,7 @@
     "gatsby": "^4.18.0",
     "gatsby-plugin-gatsby-cloud": "^4.18.0",
     "gatsby-plugin-image": "^2.18.0",
+    "gatsby-plugin-mailchimp": "^5.2.2",
     "gatsby-plugin-manifest": "^4.18.0",
     "gatsby-plugin-offline": "^5.18.0",
     "gatsby-plugin-preact": "^6.18.0",
@@ -25,6 +26,9 @@
     "react-helmet": "^6.1.0"
   },
   "devDependencies": {
+    "@parcel/namer-default": "^2.6.2",
+    "@tailwindcss/forms": "^0.5.2",
+    "@tailwindcss/typography": "^0.5.4",
     "autoprefixer": "^10.4.7",
     "gatsby-plugin-postcss": "^5.18.0",
     "postcss": "^8.4.14",
