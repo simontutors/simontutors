@@ -24,18 +24,17 @@ const Layout = ({ children }) => {
   `)
 
   return (
-    <div data-theme="night" className="lg:px-28">
+    <div data-theme="lofi" className="container-fluid bg-base-100 px-20">
       <Header siteTitle={data.site.siteMetadata?.title || `Title`} />
-      <main>{children}</main>
+      <main class="">{children}</main>
       <footer
+        className="bg-black py-5 lg:px-20 "
         style={{
           marginTop: `var(--space-5)`,
           fontSize: `var(--font-sm)`,
         }}
       >
-        © {new Date().getFullYear()} &middot; Built with
-        {` `}
-        <a href="https://www.gatsbyjs.com">Gatsby</a>
+        © {new Date().getFullYear()}
       </footer>
     </div>
   )

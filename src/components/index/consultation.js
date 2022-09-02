@@ -1,8 +1,7 @@
 import * as React from "react"
 import { Widget } from "@typeform/embed-react"
 import { Component } from "react"
-// import the component
-import Mailchimp from "react-mailchimp-form"
+import { Script } from "gatsby"
 
 const CTA = () => {
   return <Widget id="nt5EzOXk" style={{ height: "100%" }} className="my-form" />
@@ -10,52 +9,17 @@ const CTA = () => {
 
 const Consultation = () => {
   return (
-    <div class="grid min-h-screen grid-cols-12 bg-stone-800 p-20">
-      <div class="col-span-8 ">
-        <div class="block rounded-lg bg-white p-6 shadow-lg">
-          <Mailchimp
-            action="https://simontutors.us17.list-manage.com/subscribe/post?u=7cbc691cff7a3c07af7f4c45d&amp;id=bc507d2537"
-            //Adding multiple fields:
-            fields={[
-              {
-                name: "FNAME",
-                placeholder: "Your name",
-                type: "text",
-                required: true,
-              },
-              {
-                name: "EMAIL",
-                placeholder: "Email",
-                type: "email",
-                required: true,
-              },
-              {
-                name: "PHONE",
-                placeholder: "Phone Number",
-                type: "text",
-                required: true,
-              },
-              {
-                name: "GRADE",
-                placeholder:
-                  "Your child's current grade or most recently completed grade",
-                type: "text",
-                required: true,
-              },
-            ]}
-            // Change predetermined language
-            messages={{
-              sending: "Sending...",
-              success: "I'll be in contact soon!",
-              error: "An unexpected internal error has occurred.",
-              empty: "Please enter all fields.",
-              duplicate: "This email has already been used.",
-              button: "Request your consultation!",
-            }}
-            // Add a personalized class
-            className="mailchimpform"
-          />
-        </div>
+    <div id="consultation" class="grid  grid-cols-12 py-36 px-5 lg:px-36">
+      <div class="col-span-12 ">
+        <div
+          data-tf-widget="nt5EzOXk"
+          data-tf-hide-headers
+          data-tf-iframe-props="title=Simon Tutors Consultation"
+          data-tf-medium="snippet"
+          data-tf-disable-auto-focus
+          className="typeform"
+        ></div>
+        <Script src="//embed.typeform.com/next/embed.js"></Script>
       </div>
     </div>
   )

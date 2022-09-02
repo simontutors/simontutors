@@ -8,7 +8,7 @@ const PriceCard = ({ type, price, recommendation }) => {
           {type}
         </span>
         <span class="text-md font-bold text-gray-900 dark:text-white">
-          {price}
+          ${price}
         </span>
       </div>
 

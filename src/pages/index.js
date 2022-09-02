@@ -11,6 +11,8 @@ import Reviews from "../components/index/reviews"
 import Pricing from "../components/index/pricing"
 import Benefits from "../components/index/benefits"
 import Consultation from "../components/index/consultation"
+import Disclaimer from "../components/index/disclaimer"
+import Proof from "../components/index/proof"
 
 const IndexPage = () => (
   <Layout>
@@ -18,7 +20,9 @@ const IndexPage = () => (
     <Hero />
     <Benefits />
     <Results />
+    <Disclaimer />
     <Reviews />
+    <Proof />
     <Pricing />
     <Consultation />
   </Layout>
