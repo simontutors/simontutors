@@ -21,8 +21,8 @@ const IndexPage = () => (
     <Benefits />
     <Results />
     <Disclaimer />
-    <Reviews />
     <Proof />
+    <Reviews />
     <Pricing />
     <Consultation />
   </Layout>

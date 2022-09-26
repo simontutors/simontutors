@@ -24,11 +24,11 @@ const Layout = ({ children }) => {
   `)
 
   return (
-    <div data-theme="lofi" className="container-fluid bg-base-100 px-20">
+    <div data-theme="bumblebee" className="container-fluid bg-base-100">
       <Header siteTitle={data.site.siteMetadata?.title || `Title`} />
-      <main class="">{children}</main>
+      <main>{children}</main>
       <footer
-        className="bg-black py-5 lg:px-20 "
+        className="bg-primary py-5 text-primary-content lg:px-20"
         style={{
           marginTop: `var(--space-5)`,
           fontSize: `var(--font-sm)`,

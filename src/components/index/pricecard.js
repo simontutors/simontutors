@@ -2,7 +2,7 @@ import * as React from "react"
 
 const PriceCard = ({ type, price, recommendation }) => {
   return (
-    <div class="rounded-2xl bg-white p-4 shadow-lg dark:bg-gray-800">
+    <div class="col-span-12 rounded-2xl bg-white p-4 shadow-lg dark:bg-gray-800 lg:col-span-4">
       <div class="flex justify-between pb-10">
         <span class="text-md font-medium text-gray-800 dark:text-gray-50">
           {type}

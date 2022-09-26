@@ -3,23 +3,18 @@ import { StaticImage } from "gatsby-plugin-image"
 
 const Benefits = () => {
   return (
-    <div style={{ display: "grid" }}>
-      {/* You can use a GatsbyImage component if the image is dynamic */}
+    <div style={{ display: "grid" }} className="pb-20">
       <StaticImage
-        className="my-28 ml-20 w-4/6"
+        className="py-28 md:ml-20 md:w-4/6"
         transformOptions={{
           duotone: { shadow: "#002FA7", highlight: "#ffffff" },
         }}
         quality="100"
         style={{
           gridArea: "1/1",
-          // You can set a maximum height for the image, if you wish.
         }}
-        // You can optionally force an aspect ratio for the generated image
         aspectRatio={1 / 1}
-        // This is a presentational image, so the alt should be an empty string
         alt=""
-        // Assisi, Perúgia, Itália by Bernardo Ferrari, via Unsplash
         src={"../../images/student.jpg"}
         formats={["auto", "webp", "avif"]}
       />
@@ -34,21 +29,21 @@ const Benefits = () => {
         }}
       >
         {/* Any content here will be centered in the component */}
-        <div class=" px-10 py-20 pt-20 ">
-          <div class="grid-cols-12  lg:grid">
-            <div className="col-span-5 col-start-4 mt-36 bg-primary p-10 text-lg text-primary-content">
+        <div class="py-20  pt-20 md:px-10">
+          <div class="grid-cols-12  pr-10 lg:grid">
+            <div className="col-span-10 mt-36 bg-primary p-10 text-lg text-primary-content md:col-span-5 md:col-start-4">
               <h1 class="text-2xl">Specially customized 1-on-1 tutoring</h1>
               <p>
                 My private tutoring allows your child to practice with problem
                 solving strategies that are especially suited for them - based
                 on 2000+ hours of experience with SHSAT students at tutoring
-                centers and private prep. I will expose them to multiple
+                centers and private prep. I will expose them tso multiple
                 strategies, until we find the strategies that they are best
                 with.
               </p>
             </div>
           </div>
-          <div class="mb-20  grid-cols-12 lg:grid">
+          <div class="mb-20  grid-cols-12 pl-10  lg:grid ">
             <div className="col-span-5 col-start-8 mt-36 bg-primary p-10 text-lg text-primary-content">
               <h1 class="text-2xl">Old fashioned cram style</h1>
               <p>

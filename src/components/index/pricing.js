@@ -1,5 +1,4 @@
 import * as React from "react"
-import PriceCard from "./pricecard"
 
 const base = 120
 const projectHours = 80
@@ -11,15 +10,28 @@ const oneHour = base
 const twoHour = base * 2 * twoHourDiscountRate
 const projectBased = twoHour * projectHours * projecyDiscountRate
 
-const oneHourSummer = oneHour * summerDiscountRate
-const twoHourSummer = twoHour * summerDiscountRate
-const projectBasedSummer = projectBased * summerDiscountRate
+// const oneHourSummer = oneHour * summerDiscountRate
+// const twoHourSummer = twoHour * summerDiscountRate
+// const projectBasedSummer = projectBased * summerDiscountRate
+
+const PriceCard = ({ type, price, recommendation }) => {
+  return (
+    <div class="col-span-12 rounded-2xl bg-secondary p-4 text-secondary-content shadow-lg lg:col-span-4">
+      <div class="flex justify-between pb-10 text-lg ">
+        <span class="font-bold">{type}</span>
+        <span class="font-medium">${price}</span>
+      </div>
+
+      <p>{recommendation}</p>
+    </div>
+  )
+}
 
 const Pricing = () => {
   return (
-    <section class="bg-base-200 md:p-20">
+    <section class="bg-base-200 p-5 py-20 lg:p-20 ">
       <h1 class="text-4xl">Pricing</h1>
-      <div class="grid-cols-3 gap-20 md:grid ">
+      <div class="grid grid-cols-3 gap-10 md:grid-cols-12 lg:grid-cols-12 lg:gap-20 ">
         <PriceCard
           type="1 hour"
           price={oneHour}
@@ -40,7 +52,7 @@ const Pricing = () => {
         />
       </div>
 
-      <div class="mt-20 bg-base-300 p-12">
+      <div class="mt-20 rounded-lg bg-base-100 p-5">
         <p class="">
           ** Project based tutoring is effectively an "unlimitted tutoring
           plan". We have sessions as often as possible with time for homework in
