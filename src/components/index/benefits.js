@@ -5,7 +5,7 @@ const Benefits = () => {
   return (
     <div style={{ display: "grid" }} className="pb-20">
       <StaticImage
-        className="py-28 md:ml-20 md:w-4/6"
+        className="py-28 md:ml-20 md:w-7/12"
         transformOptions={{
           duotone: { shadow: "#002FA7", highlight: "#ffffff" },
         }}
@@ -31,7 +31,7 @@ const Benefits = () => {
         {/* Any content here will be centered in the component */}
         <div class="py-20  pt-20 md:px-10">
           <div class="grid-cols-12  pr-10 lg:grid">
-            <div className="col-span-10 mt-36 bg-primary p-10 text-lg text-primary-content md:col-span-5 md:col-start-4">
+            <div className="col-span-10 mt-36 bg-black p-10 text-lg text-primary-content md:col-span-5 md:col-start-4">
               <h1 class="text-2xl">Specially customized 1-on-1 tutoring</h1>
               <p>
                 My private tutoring allows your child to practice with problem
@@ -44,7 +44,7 @@ const Benefits = () => {
             </div>
           </div>
           <div class="mb-20  grid-cols-12 pl-10  lg:grid ">
-            <div className="col-span-5 col-start-8 mt-36 bg-primary p-10 text-lg text-primary-content">
+            <div className="col-span-5 col-start-8 mt-36 bg-black p-10 text-lg text-primary-content">
               <h1 class="text-2xl">Old fashioned cram style</h1>
               <p>
                 Predictable timeline. First we do a quick review of all the

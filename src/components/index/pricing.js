@@ -31,7 +31,7 @@ const Pricing = () => {
   return (
     <section class="bg-base-200 p-5 py-20 lg:p-20 ">
       <h1 class="text-4xl">Pricing</h1>
-      <div class="grid grid-cols-3 gap-10 md:grid-cols-12 lg:grid-cols-12 lg:gap-20 ">
+      <div class="flex grid-cols-3 flex-col gap-10 md:grid md:grid-cols-12 lg:grid-cols-12 lg:gap-20 ">
         <PriceCard
           type="1 hour"
           price={oneHour}
@@ -52,19 +52,24 @@ const Pricing = () => {
         />
       </div>
 
-      <div class="mt-20 rounded-lg bg-base-100 p-5">
-        <p class="">
-          ** Project based tutoring is effectively an "unlimitted tutoring
-          plan". We have sessions as often as possible with time for homework in
-          between. The total amount is due upfront. You may also pay in 3
-          installments with an additional 5% convenience fee: 20 percent
-          upfront, 40% after the first 20 tutoring hours, and the rest after the
-          next 20 tutoring hours.
-        </p>
-        <p>
-          If you start with hourly sessions, book less than 30 hours, and later
-          switch to Project Based tutoring, you will recieve a pro-rated price.
-        </p>
+      <div className="flex grid-cols-12 flex-col md:grid">
+        <div class="col-span-7">
+          <div class="mt-20 rounded-lg bg-base-100 p-5 text-base-content">
+            <p class="">
+              ** Project based tutoring is effectively an "unlimitted tutoring
+              plan". We have sessions as often as possible with time for
+              homework in between. The total amount is due upfront. You may also
+              pay in 3 installments with an additional 5% convenience fee: 20
+              percent upfront, 40% after the first 20 tutoring hours, and the
+              rest after the next 20 tutoring hours.
+            </p>
+            <p>
+              If you start with hourly sessions, book less than 30 hours, and
+              later switch to Project Based tutoring, you will recieve a
+              pro-rated price.
+            </p>
+          </div>
+        </div>
       </div>
     </section>
   )

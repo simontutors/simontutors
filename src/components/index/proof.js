@@ -4,20 +4,20 @@ import { StaticImage } from "gatsby-plugin-image"
 
 const Proof = () => {
   return (
-    <section class="proof grid grid-cols-12 gap-20 bg-accent py-56">
-      <div class="col-span-8 col-start-2">
+    <section class="proof flex grid-cols-12 flex-col gap-20 bg-gray-900/10 py-20 px-5 md:grid md:py-56 md:px-20">
+      <div class="col-span-8 col-start-1">
         <StaticImage src="../../images/milancard.jpg" alt="Milan" />
       </div>
-      <div class="col-span-4 col-start-8 pt-28">
+      <div class="col-span-4 col-start-8 md:pt-28">
         <StaticImage src="../../images/reesemessage.jpg" alt="Reese" />
       </div>
-      <div class="col-span-5 col-start-2 -mt-72">
+      <div class="col-span-5 col-start-1 md:-mt-72">
         <StaticImage src="../../images/maggiemessage.jpeg" alt="Maggie" />
       </div>
-      <div class="col-span-5 col-start-7 mt-96 pt-44 ">
+      <div class="col-span-6 col-start-7 md:mt-96 md:pt-44 ">
         <StaticImage src="../../images/lucasmessage.jpg" alt="Lucas" />
       </div>
-      <div class="col-span-3 col-start-3 -mt-28">
+      <div class="col-span-4 col-start-2 md:-mt-28">
         <StaticImage src="../../images/jennymessage.jpeg" alt="Jenny" />
       </div>
     </section>

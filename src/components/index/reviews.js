@@ -16,7 +16,7 @@ const Review = ({
       <p>{review}</p>
       <div class="grid grid-cols-12 ">
         <div class="col-span-3">{children}</div>
-        <div class="place-center col-span-9 flex flex-col justify-center bg-accent text-accent-content">
+        <div class="place-center col-span-9 flex flex-col justify-center bg-secondary text-accent-content">
           <span class="pl-3">{name}</span>
           <span class="pl-3">{relationship}</span>
           <span class="pl-3">({school})</span>
@@ -28,7 +28,7 @@ const Review = ({
 
 const Reviews = () => {
   return (
-    <section class="reviews grid-cols-12 gap-32 bg-base-300 p-5 py-20 md:grid lg:columns-2 lg:px-20 lg:py-36">
+    <section class="reviews grid-cols-12 gap-32 bg-base-300 p-5 py-20 md:grid lg:px-20 lg:py-36">
       <div class="col-span-7">
         <Review
           name="Jiyoung K."

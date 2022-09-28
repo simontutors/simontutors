@@ -3,7 +3,7 @@ import * as React from "react"
 const Result = ({ result, reflection }) => {
   return (
     <details class="mb-4 text-base-content">
-      <summary class="my-4 rounded-md bg-base-200 py-2 px-4 font-semibold">
+      <summary class="my-5 rounded-md bg-base-200 py-2 px-4 font-semibold">
         {result}
       </summary>
       <p class="rounded-md bg-base-100 py-2 px-4 ">{reflection}</p>
@@ -13,7 +13,7 @@ const Result = ({ result, reflection }) => {
 
 const Results = () => {
   return (
-    <section class="bg-base-300 text-gray-700">
+    <section class="bg-gray-900 text-gray-700">
       <div class="mx-auto px-5 py-56">
         <div class=" flex flex-wrap sm:mx-auto lg:w-4/5">
           <div class="w-full px-4 lg:w-1/2">
